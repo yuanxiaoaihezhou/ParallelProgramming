@@ -14,7 +14,7 @@ int main() {
             // 初始化数组
             for (int i = 0; i < n; i++) a[i] = i;
             
-            int sum1 = 0, sum2 = 0, sum;
+            volatile int sum1 = 0, sum2 = 0, sum;
             gettimeofday(&start, NULL);
             // 循环展开求和
             for (int i = 0; i < n; i += 2) {
